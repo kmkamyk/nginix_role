@@ -1,6 +1,7 @@
 ---
 - name: Configure and deploy web server
   become: true
+  gather_facts: true
   hosts: all
   vars:
     nginx_user: "root"
@@ -15,7 +16,7 @@
     nginx_types_hash_max_size: 2048
     nginx_listen_port: 8080
     nginx_server_name: "localhost"
-    INDEX_HTML_CONTENT: "Czesc, nazywam sie kamil i to jest kamil usunie"
+    INDEX_HTML_CONTENT: "Hallo World"
   roles:
     - my_webserver_role
 
