@@ -1,6 +1,7 @@
 ---
 - name: Configure and deploy web server
   become: true
+  hosts: all
   vars:
     nginx_user: "root"
     nginx_worker_processes: "auto"
