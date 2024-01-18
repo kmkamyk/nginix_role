@@ -1,6 +1,5 @@
 ---
 - name: Configure and deploy web server
-  hosts: localhost
   become: true
   vars:
     nginx_user: "root"
