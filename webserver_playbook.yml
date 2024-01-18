@@ -15,7 +15,7 @@
     nginx_types_hash_max_size: 2048
     nginx_listen_port: 8080
     nginx_server_name: "localhost"
-    INDEX_HTML_CONTENT: "Hallo World"
+    INDEX_HTML_CONTENT: "Czesc, nazywam sie kamil i to jest kamil usunie"
   roles:
     - my_webserver_role
 
